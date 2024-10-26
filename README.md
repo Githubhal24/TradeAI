@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/badge/-streamlit-000000.svg?logo=streamlit&style=for-the-badge">
   <!-- バックエンドのフレームワーク一覧 -->
   <img src="https://img.shields.io/badge/-Pytorch-092E20.svg?logo=Pytorch&style=for-the-badge">
-  <img src="https://img.shields.io/badge/-sklearn-FFFFFF.svg?logo=sklearn&style=for-the-badge">
+  <img src="https://img.shields.io/badge/-sklearn-FF2465.svg?logo=sklearn&style=for-the-badge">
   <img src="https://img.shields.io/badge/-numpy-232F3E.svg?logo=numpy&style=for-the-badge">
   <img src="https://img.shields.io/badge/-pandas-20232A?style=for-the-badge&logo=pandas&logoColor=844EBA">
   <!-- バックエンドの言語一覧 -->
@@ -26,6 +26,8 @@
 2. [環境](#環境)
 3. [ディレクトリ構成](#ディレクトリ構成)
 4. [開発環境構築](#開発環境構築)
+5. [動作確認](#動作確認)
+6. [環境変数の一覧](#環境変数の一覧)
 
 <br />
 
@@ -42,10 +44,10 @@ Trade AI
 株価の時系列データとGemini APIを統合したデータをもとにRNNにより株価予測を行うAI
 
 <!-- プロジェクトの概要を記載 -->
-| ソースコード  | 概要 |
+| ソースコード           | 概要                                                                                          |
 | --------------------- | --------------------------------------------------------------------------------------------- |
 | TradeAI.py            | streamlitによりブラウザ上でデータ取得・予測を行うメイン処理部分                                    |
-| model.py              | AIモデルの定義                                                                                   |
+| model.py              | AIモデルの定義                                                                                 |
 | stock_data.py         | yahoofinanceからデータ取得やGemini APIによるニュース記事の感情分析スコアとの統合を行う処理の定義     |
 | train.py              | モデルの学習プロセスの定義                                                                       |
 | .env                  | 各種APIキーを格納するenvファイル                                                                 |
@@ -74,8 +76,6 @@ Trade AI
 ## ディレクトリ構成
 
 <!-- Treeコマンドを使ってディレクトリ構成を記載 -->
-
-❯ tree -a -I "node_modules|.next|.git|.pytest_cache|static" -L 2
 .
 <p>├── .env</p>
 <p>├── README.md</p>
@@ -86,7 +86,7 @@ Trade AI
 
 <p align="right">(<a href="#top">トップへ</a>)</p>
 
-### 動作確認
+## 動作確認
 <ol type="1">
 <p>
   <li>[streamlit run TradeAI.py]を実行</li>
@@ -94,8 +94,7 @@ Trade AI
 </p>
 </ol>  
 
-
-### 環境変数の一覧
+## 環境変数の一覧
 
 | 変数名                 | 役割                      | デフォルト値                         |                
 | ---------------------- | ------------------------ | ----------------------------------- | 
