@@ -50,7 +50,7 @@ Trade AI
 | model.py                  | AIモデルの定義                                                                                 |
 | stock_data.py             | yahoofinanceからデータ取得やGemini APIによるニュース記事の感情分析スコアとの統合を行う処理の定義     |
 | train.py                  | モデルの学習プロセスの定義                                                                       |
-| .env                      | 各種APIキーを格納するenvファイル                                                                 |
+| .env                      | 各種APIキーを環境変数として格納するenvファイル                                                                 |
 
 
 <p align="right">(<a href="#top">トップへ</a>)</p>
