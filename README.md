@@ -7,16 +7,16 @@
 <!-- 該当するプロジェクトの中から任意のものを選ぶ-->
 <p style="display: inline">
   <!-- フロントエンドのフレームワーク一覧 -->
-  <img src="https://img.shields.io/badge/-streamlit-000000.svg?logo=node.js&style=for-the-badge">
+  <img src="https://img.shields.io/badge/-streamlit-000000.svg?logo=streamlit&style=for-the-badge">
   <!-- バックエンドのフレームワーク一覧 -->
-  <img src="https://img.shields.io/badge/-Pytorch-092E20.svg?logo=django&style=for-the-badge">
-  <img src="https://img.shields.io/badge/-scikit-learn-FFFFFF.svg?logo=github-actions&style=for-the-badge">
-  <img src="https://img.shields.io/badge/-numpy-232F3E.svg?logo=amazon-aws&style=for-the-badge">
-  <img src="https://img.shields.io/badge/-pandas-20232A?style=for-the-badge&logo=terraform&logoColor=844EBA">
+  <img src="https://img.shields.io/badge/-Pytorch-092E20.svg?logo=Pytorch&style=for-the-badge">
+  <img src="https://img.shields.io/badge/-scikit-learn-FFFFFF.svg?logo=scikit-learn&style=for-the-badge">
+  <img src="https://img.shields.io/badge/-numpy-232F3E.svg?logo=numpy&style=for-the-badge">
+  <img src="https://img.shields.io/badge/-pandas-20232A?style=for-the-badge&logo=pandas&logoColor=844EBA">
   <!-- バックエンドの言語一覧 -->
   <img src="https://img.shields.io/badge/-Python-F2C63C.svg?logo=python&style=for-the-badge">
   <!-- その他 -->
-  <img src="https://img.shields.io/badge/-Gemini API-1488C6.svg?logo=next.js&style=for-the-badge">
+  <img src="https://img.shields.io/badge/-Gemini API-1488C6.svg?logo=Gemini&style=for-the-badge">
 
 </p>
 
@@ -28,11 +28,8 @@
 4. [開発環境構築](#開発環境構築)
 5. [トラブルシューティング](#トラブルシューティング)
 
-<!-- READMEの作成方法のドキュメントのリンク -->
 <br />
-<div align="right">
-    <a href="READMEの作成方法のリンク"><strong>READMEの作成方法 »</strong></a>
-</div>
+
 <!-- プロジェクト名を記載 -->
 
 ## プロジェクト名
@@ -46,13 +43,14 @@ Trade AI
 株価の時系列データとGemini APIを統合したデータをもとにRNNにより株価予測を行うAI
 
 <!-- プロジェクトの概要を記載 -->
+| ソースコード  | 概要 |
+| --------------------- | --------------------------------------------------------------------------------------------- |
+| TradeAI.py            | streamlitによりブラウザ上でデータ取得・予測を行うメイン処理部分                                    |
+| model.py              | AIモデルの定義                                                                                   |
+| stock_data.py         | yahoofinanceからデータ取得やGemini APIによるニュース記事の感情分析スコアとの統合を行う処理の定義     |
+| train.py              | モデルの学習プロセスの定義                                                                       |
+| .env                  | 各種APIキーを格納するenvファイル                                                                 |
 
-  <p align="left">
-    <br />
-    <!-- プロジェクト詳細にBacklogのWikiのリンク -->
-    <a href="Backlogのwikiリンク"><strong>プロジェクト詳細 »</strong></a>
-    <br />
-    <br />
 
 <p align="right">(<a href="#top">トップへ</a>)</p>
 
@@ -64,10 +62,11 @@ Trade AI
 | --------------------- | ---------- |
 | Python                | 3.12.7     |
 | pytorch               | 4.2.1      |
-| numpy                 | 3.14.0     |
-| MySQL                 | 8.0        |
-| Node.js               | 16.17.0    |
-| dotenv                 |      |
+|                  | 8.0        |
+
+| numpy                 | 1.24.3     |
+| pandas                | 2.0.3    |
+| dotenv                |      |
 | scikit-leran          | 1.3.0     |
 | tqdm                  | 4.65.0     |
 
@@ -88,10 +87,12 @@ Trade AI
 <p align="right">(<a href="#top">トップへ</a>)</p>
 
 ### 動作確認
-
-1.[streamlit run TradeAI.py]を実行
-2.Webブラウザページに遷移されるか確認
-　アクセスできたら成功
+<ol type="1">
+<p>
+  <li>[streamlit run TradeAI.py]を実行</li>
+  <li>Webブラウザページに遷移されるか確認, アクセスできたら成功</li>
+</p>
+</ol>  
 
 
 ### 環境変数の一覧
