@@ -10,13 +10,13 @@
   <img src="https://img.shields.io/badge/-streamlit-000000.svg?logo=streamlit&style=for-the-badge">
   <!-- バックエンドのフレームワーク一覧 -->
   <img src="https://img.shields.io/badge/-Pytorch-092E20.svg?logo=Pytorch&style=for-the-badge">
-  <img src="https://img.shields.io/badge/-scikit-learn-FFFFFF.svg?logo=scikit-learn&style=for-the-badge">
+  <img src="https://img.shields.io/badge/-sklearn-FFFFFF.svg?logo=sklearn&style=for-the-badge">
   <img src="https://img.shields.io/badge/-numpy-232F3E.svg?logo=numpy&style=for-the-badge">
   <img src="https://img.shields.io/badge/-pandas-20232A?style=for-the-badge&logo=pandas&logoColor=844EBA">
   <!-- バックエンドの言語一覧 -->
   <img src="https://img.shields.io/badge/-Python-F2C63C.svg?logo=python&style=for-the-badge">
   <!-- その他 -->
-  <img src="https://img.shields.io/badge/-Gemini API-1488C6.svg?logo=Gemini&style=for-the-badge">
+  <img src="https://img.shields.io/badge/-Gemini API-1488C6.svg?&style=for-the-badge">
 
 </p>
 
@@ -26,7 +26,6 @@
 2. [環境](#環境)
 3. [ディレクトリ構成](#ディレクトリ構成)
 4. [開発環境構築](#開発環境構築)
-5. [トラブルシューティング](#トラブルシューティング)
 
 <br />
 
@@ -62,13 +61,14 @@ Trade AI
 | --------------------- | ---------- |
 | Python                | 3.12.7     |
 | pytorch               | 4.2.1      |
-|                  | 8.0        |
-
 | numpy                 | 1.24.3     |
-| pandas                | 2.0.3    |
-| dotenv                |      |
-| scikit-leran          | 1.3.0     |
+| pandas                | 2.0.3      |
+| python-dotenv         | 16.4.5     |
+| scikit-leran          | 1.3.0      |
+| streamlit             | 1.38.0     |
 | tqdm                  | 4.65.0     |
+|yfinance               | 0.1.56     |
+|yahooquery             | 2.3.7      |
 
 
 ## ディレクトリ構成
@@ -77,12 +77,12 @@ Trade AI
 
 ❯ tree -a -I "node_modules|.next|.git|.pytest_cache|static" -L 2
 .
-├── .env
-├── README.md
-├── TradeAI.py
-├── model.py
-├── stock_data.py
-├── train.py
+<p>├── .env</p>
+<p>├── README.md</p>
+<p>├── TradeAI.py</p>
+<p>├── model.py</p>
+<p>├── stock_data.py</p>
+<p>├── train.py</p>
 
 <p align="right">(<a href="#top">トップへ</a>)</p>
 
