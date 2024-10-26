@@ -5,9 +5,9 @@ import torch
 import torch.nn as nn
 import numpy as np
 import pandas as pd
-from stock_data2 import search_stock_code, load_data, get_batch, normalization
+from stock_data import search_stock_code, load_data, get_batch, normalization
 from model import TransformerModel, EarlyStop
-from train_sample import train_model
+from train import train_model
 from sklearn.metrics import root_mean_squared_error, r2_score, mean_absolute_error
 import os
 
