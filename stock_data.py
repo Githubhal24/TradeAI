@@ -79,7 +79,7 @@ def load_data(data_norm, stock_code, start_date, end_date, device, api_use, feat
 
     #データの変換
     inout_data = torch.FloatTensor(inout_data)
-    train_rate = 0.7
+    train_rate = 0.8
     train_data = inout_data[:int(np.shape(inout_data)[0] * train_rate)].to(device)
     valid_data = inout_data[int(np.shape(inout_data)[0] * train_rate):].to(device)
     
