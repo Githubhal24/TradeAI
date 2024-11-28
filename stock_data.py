@@ -103,7 +103,7 @@ def get_news_data(api_key, query, start_date, end_date):
         'q': query,  # ニュース検索キーワード
         'from': start_date,
         'to': end_date,
-        'language': 'ja',  # ニュースの言語
+        'language': 'jp',  # ニュースの言語
         'country': 'jp',  # ニュースの国
         'apiKey': api_key
     }
